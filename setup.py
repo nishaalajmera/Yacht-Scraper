@@ -5,7 +5,7 @@ setup(
     name = 'yacht_scraper',
     version = '0.0.1',
     description = 'Package that allows scraping of yacht data from boat24.com',
-    url = 'https://github.com/nishaalajmera/Yacht_scraper.git'
+    url = 'https://github.com/nishaalajmera/Yacht_scraper.git',
     author = 'Nishaal Ajmera',
     licence = 'MIT',
     packages = find_packages(),
