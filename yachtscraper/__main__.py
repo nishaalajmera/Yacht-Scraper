@@ -1,7 +1,3 @@
-"""
-This module contains a scraper and database creator, which finds a number of Dota 2 Professional Match IDs, and extracts key information, outputs it to file and then
-transforms the data into a readable, analysable format.
-"""
 from .scraper_module import YachtScraper
 from .rds_module import RdsDataStorage
 from tqdm import tqdm
