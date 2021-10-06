@@ -3,7 +3,7 @@ from .rds_module import RdsDataStorage
 from tqdm import tqdm
 import pandas as pd
 
-RDS_instance = rds_module.RdsDataStorage()
+RDS_instance = RdsDataStorage()
 ENDPOINT = RDS_instance.get_endpoint()
 USER = RDS_instance.get_username()
 PASSWORD = RDS_instance.get_password()

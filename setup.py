@@ -3,7 +3,7 @@ from setuptools import find_packages
 
 setup(
     name = 'yacht_scraper',
-    version = '0.0.5',
+    version = '0.0.6',
     description = 'Package that allows scraping of yacht data from boat24.com',
     url = 'https://github.com/nishaalajmera/Yacht_scraper.git',
     author = 'Nishaal Ajmera',
