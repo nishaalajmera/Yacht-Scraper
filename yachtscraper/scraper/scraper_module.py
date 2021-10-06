@@ -3,7 +3,6 @@ from selenium.webdriver.common.keys import Keys
 import time
 from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
-import os
 
 class YachtScraper:
     """
@@ -111,21 +110,14 @@ class YachtScraper:
                    except NoSuchElementException:
                     self.data[v].append(None)
 
-    def convert_dict_to_csv(self, export_path: str) -> pd.DataFrame:
+    def convert_dict_to_pd(self) -> pd.DataFrame:
         """
-        Converts the dictionary to a pandas dataframe and then is converted to 
-        a csv file
-        Args:
-            export_path (str) : Filepath and the filename to be exported
+        Converts the dictionary to a pandas dataframe
+      
         Returns:
             pd.DataFrame: Pandas Dataframe generated from the dictionary
         """
         df = pd.DataFrame.from_dict(self.data)
-        # If the file already exists, append the new data
-        if os.path.isfile(export_path + '.csv'):
-            df.to_csv(export_path + '.csv',
-                       mode='a', header=False, index=False)
-        else:
-            df.to_csv(export_path + '.csv', index=False)
+ 
         return df
     
