@@ -1,5 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
 import time
 from selenium.common.exceptions import NoSuchElementException
 import pandas as pd
@@ -13,7 +14,12 @@ class YachtScraper:
     """
     def __init__(self):
         BASE_URL = 'https://www.boat24.com/uk/secondhandboats/'
-        self.driver = webdriver.Chrome('/Users/nishaalajmera/Documents/chromedriver')
+        
+        options = Options()
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument("start-maximized")
+        self.driver = webdriver.Chrome(options=options)
         self.driver.get(BASE_URL)
         self.data = {'price': [], 'boat_type': [],'year_built': [], 'manufacturer': [], 
                      'model': [], 'dimensions': [],'draft': [], 'displacement': [], 

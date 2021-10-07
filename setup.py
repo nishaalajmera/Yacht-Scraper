@@ -9,5 +9,5 @@ setup(
     author = 'Nishaal Ajmera',
     licence = 'MIT',
     packages = find_packages(),
-    install_requires = ['selenium','pandas','tqdm','SQLAlchemy', 'psycopg2-binary']
+    install_requires = ['selenium','pandas','tqdm','SQLAlchemy','psycopg2-binary']
 )
