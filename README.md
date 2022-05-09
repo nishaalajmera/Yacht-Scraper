@@ -1,19 +1,9 @@
 # Yacht Scraper
 This package scrapes information on pre-owned yachts advertised on boat24.com
 
-# Prerequsite
+# Prerequisites
+- Python 3
 - AWS RDS instance
-
-# Installation 
-`pip install yacht-scraper`
-
-# Setup 
-1. Run from CLI :
-`python -m yachtscraper`
-2. Specify no. of pages to scrape 
-3. Add AWS RDS endpoint
-
-![Diagram](/images/data_flow_diagram.jpg)
 
 # Data Features
 - Price
@@ -36,4 +26,15 @@ This package scrapes information on pre-owned yachts advertised on boat24.com
 - Engine Hours
 - Max Speed
 - Location
+
+# Installation and setup
+From CLI :
+1. Run `pip install yacht-scraper`
+2. Run `python -m yachtscraper`
+2. Specify no. of pages to scrape 
+3. Add AWS RDS endpoint
+
+![Diagram](/images/data_flow_diagram.jpg)
+
+
 
