@@ -1,7 +1,7 @@
 # Yacht Scraper
 This package scrapes information on pre-owned yachts advertised on boat24.com
 
-# Prerequites
+# Prerequsite
 - AWS RDS instance
 
 # Installation 
@@ -14,3 +14,26 @@ This package scrapes information on pre-owned yachts advertised on boat24.com
 3. Add AWS RDS endpoint
 
 ![Diagram](/images/data_flow_diagram.jpg)
+
+# Data Features
+- Price
+- Boat type
+- Year built
+- Manufacturer
+- Model
+- Dimensions
+- Draft
+- Displacement
+- Material
+- Beds
+- Cabin
+- Freshwater Capacity
+- Propulsion
+- Engine
+- Engine Performance
+- Fuel Capacity
+- Fuel Type
+- Engine Hours
+- Max Speed
+- Location
+
